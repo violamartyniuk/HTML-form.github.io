@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Open+Sans&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <table>
+        <thead>
+            <tr class="title-row">
+                <th>Tag</th>
+                <th class="name">Name</th>
+                <th class="description">Description</th>
+                <th class="example">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tag">&lt;input&gt;</td>
+                <td class="name-data">Checkbox Type</td>
+                <td class="description-data">When using an HTML <span class="inline-text">input</span> element, the <span class="inline-text">type="checkbox"</span> attribute will render a single checkbox item. To create a group of checkboxes related to the same topic, they should all use the same <span class="inline-text">name</span> attribute. Since it’s a checkbox, multiple checkboxes can be selected for the same topic.</td>
+                <td class="example-data"><span class="red-tag">&lt;input</span> <span class="property">type</span>=<span class="values">"checkbox"</span><span class="property"> name</span>=<span class="values">"breakfast"</span> <span class="property"> value</span>=<span class="values">"bacon"</span><span class="red-tag">&gt;</span>Bacon 🥓 <span class="red-tag">&lt;br&gt;</span> <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"checkbox"</span> <span class="property"> name</span>=<span class="values">"breakfast"</span> <span class="property"> value</span>=<span class="values">"eggs"</span><span class="red-tag">&gt;</span>Eggs 🍳<span class="red-tag">&lt;br&gt;</span> <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"checkbox"</span> <span class="property"> name</span>=<span class="values">"breakfast"</span> <span class="property"> value</span>=<span class="values">"pancakes"</span><span class="red-tag">&gt;</span>Pancakes 🥞<span class="red-tag">&lt;br&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;textarea&gt;</td>
+                <td class="name-data">Element</td>
+                <td class="description-data">
+                    <p class="description-part">The <span class="inline-text">textarea</span> element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the <span class="inline-text">rows</span> and <span class="inline-text">cols</span> attributes which determine the height and width, respectively, of the element. </p>
+                    <p class="description-part">When rendered by the browser, <span class="inline-text">textarea</span> fields can be stretched/shrunk in size by the user, but the <span class="inline-text">rows</span> and <span class="inline-text">cols</span> attributes determine the initial size. </p>
+                    <p class="description-part">Unlike the <span class="inline-text">input</span> element, the <span class="inline-text">&lt;textarea&gt;</span> element has both opening and closing tags. The <span class="inline-text">value</span> of the element is the content in between these tags (much like a <span class="inline-text">&lt;p&gt;</span> element). The code block shows a <span class="inline-text">&lt;textarea&gt;</span> of size 10x30 and with a <span class="inline-text">name</span> of <span class="inline-text">"comment"</span>. </p></td>
+                <td class="example-data"><span class="red-tag">&lt;textarea</span> <span class="property"> rows</span>=<span class="values">"10"</span> <span class="property"> cols</span>=<span class="values">"30"</span> <span class="property"> name</span>=<span class="values">"comment"</span><span class="red-tag">&gt;<span class="red-tag"></span>&lt;/textarea&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;form&gt;</td>
+                <td class="name-data">Element</td>
+                <td class="description-data">
+                    <p class="description-part">The HTML <span class="inline-text">&lt;form&gt;</span> element is used to collect and send information to an external source. </p>
+                    <p class="description-part"><span class="inline-text">&lt;form&gt;</span> can contain various input elements. When a user submits the form, information in these input elements is passed to the source which is named in the <span class="inline-text">action</span> attribute of the form.</p>
+                </td>
+                <td class="example-data">
+                    <span class="red-tag">&lt;form</span> <span class="property"> method</span>=<span class="values">"post"</span> <span class="property"> action</span>=<span class="values">"http://server1"</span><span class="red-tag">&gt;</span> <br>
+                    Enter your name: <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"text"</span> <span class="property"> name</span>=<span class="values">"fname"</span><span class="red-tag">&gt;</span> <br>
+                    <span class="red-tag">&lt;br&gt;</span> <br>
+                    Enter your age: <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"text"</span> <span class="property"> name</span>=<span class="values">"age"</span><span class="red-tag">&gt;</span> <br>
+                    <span class="red-tag">&lt;br&gt;</span> <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"submit"</span> <span class="property"> value</span>=<span class="values">"Submit"</span><span class="red-tag">&lt;input</span> 
+                    <span class="red-tag">&lt;/form&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;input&gt;</td>
+                <td class="name-data">Number Type</td>
+                <td class="description-data">
+                    <p class="description-part">HTML input elements can be of type number. These input fields allow the user to enter only numbers and a few special characters inside the field. </p>
+                    <p class="description-part">The example code block shows an input with a type of number and a name of balance. When the input field is a part of a form, the form will receive a key-value pair with the format: name: value after form submission. </p>
+                </td>
+                <td class="example-data">
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"number"</span> <span class="property"> name</span>=<span class="values">"balance"</span><span class="red-tag">/&gt;</span> 
+                </td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;input&gt;</td>
+                <td class="name-data">Element</td>
+                <td class="description-data">
+                    <p class="description-part">The HTML &lt;input&gt; element is used to render a variety of input fields on a webpage including text fields, checkboxes, buttons, etc. &lt;input&gt; element have a type attribute that determines how it gets rendered to a page. </p>
+                    <p class="description-part">The example code block will create a text input field and a checkbox input field on a webpage.</p>
+                </td>
+                <td class="example-data">
+                    <span class="red-tag">&lt;label</span> <span class="property"> for</span>=<span class="values">"fname"</span><span class="red-tag">&gt;</span>First name:<span class="red-tag">&lt;/label&gt;</span> <br>
+                    <span class="red-tag">&lt;input</span><span class="property"> type</span>=<span class="values">"text"</span> <span class="property"> name</span>=<span class="values">"fname"</span> <span class="property"> id</span>=<span class="values">"fname"</span><span class="red-tag">&gt;</span> <span class="red-tag">&lt;br&gt;</span> <br>
+                    <span class="red-tag">&lt;input</span> <span class="property"> type</span>=<span class="values">"checkbox"</span> <span class="property"> name</span>=<span class="values">"vehicle"</span> <span class="property"> value</span>=<span class="values">"Bike"</span><span class="red-tag">&gt;</span> <br> 
+                    I own a bike 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
